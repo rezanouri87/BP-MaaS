@@ -1,0 +1,313 @@
+{
+	"title":"Let's Dance",
+	"namespace":"http://b3mn.org/stencilset/letsdance#",
+	"description":"Simple stencil set for Let's dance diagrams.",
+	"propertyPackages": [
+		{
+			"name":"baseAttributes",
+ 			"properties": [
+				{
+					"id":"leftName",
+					"type":"String",
+					"title":"LHS Name",
+					"value":"",
+					"description":"The descriptive name of the BPMN element.",
+					"description_de":"Bezeichnung des BPMN-Elementes.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true,
+					"refToView":"leftNodeName"	
+				},
+				{
+					"id":"rightName",
+					"type":"String",
+					"title":"RHS Name",
+					"value":"",
+					"description":"The descriptive name of the BPMN element.",
+					"description_de":"Bezeichnung des BPMN-Elementes.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true,
+					"refToView":"rightNodeName"	
+				},
+				{
+					"id":"documentation",
+					"type":"Text",
+					"title":"Documentation",
+					"title_de":"Dokumentation",
+					"value":"",
+					"description":"This attribute is used to annotate the BPMN element, such as descriptions and other documentation.",
+					"description_de":"Der Modellierer kann weiteren Text zur Dokumentation des BPMN-Elementes einfügen.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines":true,
+					"popular" : true
+				},
+				{
+					"id":"auditing",
+					"type":"Text",
+					"title":"Auditing",
+					"title_de":"Prüfung",
+					"value":"",
+					"description":"A hook for specifying audit related properties. Auditing can only be defined for a Process.",
+					"description_de":"",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines":true
+				},
+				{
+					"id":"monitoring",
+					"type":"Text",
+					"title":"Monitoring",
+					"title_de":"Überwachung",
+					"value":"",
+					"description":"A hook for specifying monitoring related properties. Monitoring can only be defined for a Process.",
+					"description_de":"",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines":true
+				}
+ 			]
+		}
+	],
+	"stencils": [
+		{
+			"type":			"node",
+			"id":			"Diagram",
+			"title":		"Diagram",	
+			"groups":		["Diagram"],
+			"description":	"Let's Dance Diagram",
+			"view":			"node.diagram.svg",
+			"icon":			"diagram.png",
+			"roles":		[]
+		},
+		{
+			"type":			"node",
+			"id":			"AND",
+			"title":		"AND",	
+			"groups":		["Interaction"],			
+			"view":			"node.and.svg",
+			"icon":			"node.complexinteraction.png",
+			"roles":		["interaction"],
+			/*"layout":[{"type":"create.new.subprocess"}],*/
+			"addShape":function(shape) {
+				
+ 			},
+			"propertyPackages" : ["baseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"simpleInteraction",
+			"title":		"Elementary Interaction",	
+			"groups":		["Interaction"],
+			"description":	"",
+			"view":			"node.elementaryinteraction.svg",
+			"icon":			"node.elementaryinteraction.png",
+			"roles":		["interaction"],
+			"properties": [
+				{
+					"id":	"messageType",
+					"type":	"String",
+					"title":"Message Type",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"refToView":"messageType",
+					"wrapLines":false
+				},
+				{
+					"id":		"senderText",
+					"type":		"String",
+					"title":	"Sender Text",
+					"value":	"A(a)",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"senderText",
+					"wrapLines":false
+				},
+				{
+					"id":		"receiverText",
+					"type":		"String",
+					"title":	"Receiver Text",
+					"value":	"B(b)",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"receiverText",
+					"wrapLines":false
+				},
+				{
+					"id":			"senderColor",
+					"type":			"Color",
+					"title":		"Sender Color",
+					"value":		"#ffffff",
+					"description":	"",
+					"readonly":		false,
+					"optional":		true,
+					"refToView":	"sender",
+					"fill":			true,
+					"stroke":		false
+				},
+				{
+					"id":		"receiverColor",
+					"type":		"Color",
+					"title":	"Receiver Color",
+					"value":		"#ffffff",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"refToView":"receiver",
+					"fill":		true,
+					"stroke":	false
+				}
+			]
+		},
+		{
+			"type":			"edge",
+			"id":			"Precedes",
+			"title":		"Precedes",	
+			"groups":		["Relationship"],
+			"description":	"A precedes edges",
+			"view":			"edge.precedes.svg",
+			"icon":			"edge.precedes.png",
+			"roles":		["controlflow"]
+		},
+		{
+			"type":			"edge",
+			"id":			"Inhibits",
+			"title":		"Inhibits",	
+			"groups":		["Relationship"],
+			"description":	"An inhibits edges",
+			"view":			"edge.inhibits.svg",
+			"icon":			"edge.inhibits.png",
+			"roles":		["controlflow"]
+		},
+		{
+			"type":			"edge",
+			"id":			"WeakPrecedes",
+			"title":		"WeakPrecedes",	
+			"groups":		["Relationship"],
+			"description":	"A weak precedes edges",
+			"view":			"edge.weakprecedes.svg",
+			"icon":			"edge.weakprecedes.png",
+			"roles":		["controlflow"]
+		}
+		
+		
+		
+	],
+	"rules":{
+		"connectionRules": [
+			{
+				"role": 	"controlflow",
+				"connects": [
+					{
+						"from": "interaction",
+						"to":	"interaction"
+					}
+				],
+			}
+		],
+		"containmentRules":	[
+			{
+				"role":		"Diagram",
+				"contains": [
+							"interaction"
+				]
+			},
+			{
+				"role":		"complexInteraction",
+				"contains": [
+							"interaction"
+				]
+			}
+		]
+		
+	}
+}

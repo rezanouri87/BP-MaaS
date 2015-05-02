@@ -1,0 +1,2593 @@
+{
+"title":"Monitoring Rules",
+	"namespace":"http://b3mn.org/stencilset/monitoringRules#",
+	"description":"Monitoring Rules.",
+	"propertyPackages": [
+		{
+			"name":"dualBaseAttributes",
+ 			"properties": [
+				{
+					"id":"leftName",
+					"type":"String",
+					"title":"LHS Name",
+					"value":"",
+					"description":"The descriptive name of the BPMN element.",
+					"description_de":"Bezeichnung des BPMN-Elementes.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true,
+					"refToView":"leftNodeName"	
+				},
+				{
+					"id":"rightName",
+					"type":"String",
+					"title":"RHS Name",
+					"value":"",
+					"description":"The descriptive name of the BPMN element.",
+					"description_de":"Bezeichnung des BPMN-Elementes.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true,
+					"refToView":"rightNodeName"	
+				},
+				{
+					"id":"documentation",
+					"type":"Text",
+					"title":"Documentation",
+					"title_de":"Dokumentation",
+					"value":"",
+					"description":"This attribute is used to annotate the BPMN element, such as descriptions and other documentation.",
+					"description_de":"Der Modellierer kann weiteren Text zur Dokumentation des BPMN-Elementes einf�gen.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines":true,
+					"popular" : true
+				},
+				{
+					"id":"processModelId",
+					"type":"Text",
+					"title":"Process Model ID",
+					"value":"",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines":true,
+					"popular" : true
+				}				
+ 			]
+		},
+		{
+			"name":"unoBaseAttributes",
+ 			"properties": [
+				{
+					"id":"nodeName",
+					"type":"String",
+					"title":"Name",
+					"value":"",
+					"description":"The descriptive name of the BPMN element.",
+					"description_de":"Bezeichnung des BPMN-Elementes.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true,
+					"refToView":"singleNodeName"	
+				},
+				{
+					"id":"documentation",
+					"type":"Text",
+					"title":"Documentation",
+					"title_de":"Dokumentation",
+					"value":"",
+					"description":"This attribute is used to annotate the BPMN element, such as descriptions and other documentation.",
+					"description_de":"Der Modellierer kann weiteren Text zur Dokumentation des BPMN-Elementes einf�gen.",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines":true,
+					"popular" : true
+				},
+				{
+					"id":"processModelId",
+					"type":"Text",
+					"title":"Process Model ID",
+					"value":"",
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines":true,
+					"popular" : true
+				}
+ 			]
+		}
+	],
+	"stencils": [
+		{
+			"type":			"node",
+			"id":			"Diagram",
+			"title":		"Diagram",	
+			"groups":		["Diagram"],
+			"description":	"Let's Dance Diagram",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">    <g>     <rect oryx:anchors=\"top bottom left right\" x=\"1\" y=\"16\" width=\"80\"       height=\"80\" stroke=\"black\" fill=\"#D3DEFF\" stroke-width=\"2\"/>    </g> </svg> ",
+			"icon":			"diagram.png",
+			"roles":		[]
+		},
+		{
+			"type":			"node",
+			"id":			"AND",
+			"title":		"AND",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"110\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">AND</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/and-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"OR",
+			"title":		"OR",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"110\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">OR</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/or-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"XOR",
+			"title":		"XOR",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"110\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">XOR</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/xor-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"endScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Implies",
+			"title":		"Implies",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"90\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">Implies</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/and-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages": ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"NOT",
+			"title":		"NOT",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"110\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">NOT</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/and-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages": ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"segregationOfDuty",
+			"title":		"SegregationOfDuty",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"40\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">SegregationOfDuty</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>   <g id=\"sameRule\">    <path     oryx:anchors=\"top left\"     d=\"M 6.75,13 L6.75,19 L13,19 L13,25.75 L19,25.75 L19,19 L25.75,19 L25.75,13 L19,13 L19,6.75 L13,6.75 L13,13z\"     id=\"path9\"     style=\"fill:none;stroke:#000000;stroke-width:1\" />   </g>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/seg-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},{
+					"id":"sameRole",
+					"type":"Choice",
+					"title":"Same Role",					
+					"value":"Yes",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Yes",							
+							"value":"Yes",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"No",							
+							"value":"No",
+							"icon" : "list/complex.png",
+							"refToView":"sameRule"
+						}
+					]
+				},{
+					"id":"LHSRole",
+					"type":"String",
+					"title":"LHS role",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				},{
+					"id":"LHSActor",
+					"type":"String",
+					"title":"LHS actor",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				},{
+					"id":"RHSRole",
+					"type":"String",
+					"title":"RHS role",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				},{
+					"id":"RHSActor",
+					"type":"String",
+					"title":"RHS actor",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"Start Scope",										
+					"readonly":false,					
+					"optional":true				
+				},
+				{
+					"id":"endScope",
+					"type":"Sate",
+					"title":"End Scope",										
+					"readonly":false,
+					"optional":true
+				}			
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"BindOfDuty",
+			"title":		"BindOfDuty",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"75\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">BindOfDuty</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/bod-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},{
+					"id":"Role",
+					"type":"String",
+					"title":"Role",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				},{
+					"id":"Actor",
+					"type":"String",
+					"title":"Actor",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}			
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"PerformedByRole",
+			"title":		"PerformedByRole",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"50\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">PerformedByRole</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/bod-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},{
+					"id":"Role",
+					"type":"String",
+					"title":"Role",
+					"value":"",
+					"readonly":false,
+					"optional":true														
+				},{
+					"id":"Person",
+					"type":"String",
+					"title":"Person",
+					"value":"",
+					"readonly":false,
+					"optional":true														
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}			
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"PerformedByResource",
+			"title":		"PerformedByResource",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"30\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">PerformedByResource</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/bod-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},{
+					"id":"Resource",
+					"type":"String",
+					"title":"Resource",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}			
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Waiting",
+			"title":		"Waiting",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"240\" oryx:cy=\"60\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"120\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>   <rect stroke-dasharray=\"5,5\" id=\"svg_1\" height=\"120\" width=\"240\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"240\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_3\" y2=\"90\" x2=\"120\" y1=\"0\" x1=\"120\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"90\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">Waiting</text>   <text id=\"leftNodeName\" x=\"60\" y=\"40\" oryx:align=\"middle center\"></text>     <text id=\"rightNodeName\" x=\"180\" y=\"40\" oryx:align=\"middle center\"></text>    <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_5\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"55\"/>     <path oryx:anchors=\"bottom\" id=\"svg_6\" d=\"m62,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_7\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"70\" x=\"175\"/>     <path oryx:anchors=\"bottom\" id=\"svg_8\" d=\"m182,71l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>     </g> </svg> ",
+			"icon":			"nodes/waiting-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},{
+					"id":"Actor",
+					"type":"String",
+					"title":"Actor",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				}			
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Absence",
+			"title":		"Absence",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" />   <oryx:magnet oryx:cx=\"200\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>     <rect id=\"svg_1\" height=\"120\" width=\"200\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"200\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"65\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">Absence</text>   <text id=\"singleNodeName\" x=\"90\" y=\"40\" oryx:align=\"middle center\"/>   <a id=\"complexC\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"93\" y=\"70\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" id=\"svg_5\"/>     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" d=\"m100,71l0,10m-5,-5l10,0\" id=\"svg_6\"/>    </g>   </a>  </g> </svg> ",
+			"icon":			"nodes/absence-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["unoBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"nodeType",
+					"type":"Choice",
+					"title":"Node Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexC"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkC",
+					"type":"DiagramLink",
+					"title":"SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexC"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}		
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Resume",
+			"title":		"Resume",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" />   <oryx:magnet oryx:cx=\"200\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>     <rect id=\"svg_1\" height=\"120\" width=\"200\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"200\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"65\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">Resume</text>   <text id=\"singleNodeName\" x=\"90\" y=\"40\" oryx:align=\"middle center\"/>   <a id=\"complexC\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"93\" y=\"70\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" id=\"svg_5\"/>     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" d=\"m100,71l0,10m-5,-5l10,0\" id=\"svg_6\"/>    </g>   </a>  </g> </svg> ",
+			"icon":			"nodes/resume-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["unoBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"nodeType",
+					"type":"Choice",
+					"title":"Node Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexC"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkC",
+					"type":"DiagramLink",
+					"title":"SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexC"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}		
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"ExactlyTimes",
+			"title":		"ExactlyTimes",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" />   <oryx:magnet oryx:cx=\"200\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>     <rect id=\"svg_1\" height=\"120\" width=\"200\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"200\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"55\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">ExactlyTimes</text>   <text id=\"singleNodeName\" x=\"90\" y=\"40\" oryx:align=\"middle center\"/>   <a id=\"complexC\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"93\" y=\"70\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" id=\"svg_5\"/>     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" d=\"m100,71l0,10m-5,-5l10,0\" id=\"svg_6\"/>    </g>   </a>  </g> </svg> ",
+			"icon":			"nodes/et-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["unoBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"nodeType",
+					"type":"Choice",
+					"title":"Node Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexC"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkC",
+					"type":"DiagramLink",
+					"title":"SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexC"				
+				},
+				{
+					"id" : "NumberOfTimes",
+					"type" : "Integer",
+					"title" : "Number of times",					
+					"description" : "",
+					"readonly" : false,
+					"optional" : false					
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}						
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"AtLeastTimes",
+			"title":		"AtLeastTimes",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" />   <oryx:magnet oryx:cx=\"200\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>     <rect id=\"svg_1\" height=\"120\" width=\"200\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"200\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"55\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">AtLeastTimes</text>   <text id=\"singleNodeName\" x=\"90\" y=\"40\" oryx:align=\"middle center\"/>   <a id=\"complexC\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"93\" y=\"70\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" id=\"svg_5\"/>     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" d=\"m100,71l0,10m-5,-5l10,0\" id=\"svg_6\"/>    </g>   </a>  </g> </svg> ",
+			"icon":			"nodes/atleast-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["unoBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"nodeType",
+					"type":"Choice",
+					"title":"Node Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexC"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkC",
+					"type":"DiagramLink",
+					"title":"SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexC"				
+				},
+				{
+					"id" : "NumberOfTimes",
+					"type" : "Integer",
+					"title" : "Number of times",					
+					"description" : "",
+					"readonly" : false,
+					"optional" : false					
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"AtMostTimes",
+			"title":		"AtMostTimes",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" />   <oryx:magnet oryx:cx=\"200\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>     <rect id=\"svg_1\" height=\"120\" width=\"200\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"200\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"55\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">AtMostTimes</text>   <text id=\"singleNodeName\" x=\"90\" y=\"40\" oryx:align=\"middle center\"/>   <a id=\"complexC\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"93\" y=\"70\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" id=\"svg_5\"/>     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" d=\"m100,71l0,10m-5,-5l10,0\" id=\"svg_6\"/>    </g>   </a>  </g> </svg> ",
+			"icon":			"nodes/atmost-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["unoBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"nodeType",
+					"type":"Choice",
+					"title":"Node Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexC"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkC",
+					"type":"DiagramLink",
+					"title":"SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexC"				
+				},
+				{
+					"id" : "NumberOfTimes",
+					"type" : "Integer",
+					"title" : "Number of times",					
+					"description" : "",
+					"readonly" : false,
+					"optional" : false					
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Exists",
+			"title":		"Exists",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" />   <oryx:magnet oryx:cx=\"200\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>     <rect id=\"svg_1\" height=\"120\" width=\"200\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"200\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"75\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">Exists</text>   <text id=\"singleNodeName\" x=\"90\" y=\"40\" oryx:align=\"middle center\"/>   <a id=\"complexC\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"93\" y=\"70\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" id=\"svg_5\"/>     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" d=\"m100,71l0,10m-5,-5l10,0\" id=\"svg_6\"/>    </g>   </a>  </g> </svg> ",
+			"icon":			"nodes/exists-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["unoBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"nodeType",
+					"type":"Choice",
+					"title":"Node Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexC"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkC",
+					"type":"DiagramLink",
+					"title":"SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexC"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}								
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Responsible",
+			"title":		"Responsible",	
+			"groups":		["Rules"],
+			"description":	"",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg width=\"580\" height=\"400\" xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.0\">   <oryx:magnets>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"60\" />   <oryx:magnet oryx:cx=\"200\" oryx:cy=\"60\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"0\"/>   <oryx:magnet oryx:cx=\"100\" oryx:cy=\"120\"/>  </oryx:magnets>  <g>     <rect id=\"svg_1\" height=\"120\" width=\"200\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>   <line stroke-linecap=\"undefined\" stroke-linejoin=\"undefined\" id=\"svg_2\" y2=\"90\" x2=\"200\" y1=\"90\" x1=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>   <text transform=\"matrix(0.795918 0 0 0.574897 21.6327 52.4112)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" id=\"svg_4\" y=\"110\" x=\"55\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-dasharray=\"5,5\" stroke-width=\"0\" fill=\"#000000\">Responsible</text>   <text id=\"singleNodeName\" x=\"90\" y=\"40\" oryx:align=\"middle center\"/>   <a id=\"complexC\" target=\"_blank\">    <g id=\"b\"  oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"93\" y=\"70\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" id=\"svg_5\"/>     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" d=\"m100,71l0,10m-5,-5l10,0\" id=\"svg_6\"/>    </g>   </a>  </g> </svg> ",
+			"icon":			"nodes/responsible-icon.png",
+			"roles":		["interaction"],
+			"propertyPackages" : ["unoBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"nodeType",
+					"type":"Choice",
+					"title":"Node Type",					
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexC"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkC",
+					"type":"DiagramLink",
+					"title":"SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexC"				
+				},				
+				{
+					"id":"Actor",
+					"type":"String",
+					"title":"Actor",
+					"value":"",
+					"readonly":false,
+					"optional":false														
+				}								
+			]
+		},{
+			"type":			"node",
+			"id":			"Sequence",
+			"title":		"Sequence",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"171\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">Sequence</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/sequence-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Precedes",
+			"title":		"Precedes",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"171\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">Precedes</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/precedes-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				},
+				{
+					"id":"isBefore",
+					"type":"Boolean",
+					"title":"Is Before?",
+					"value":"",					
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true				
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"OneToOnePrecedes",
+			"title":		"oneToOnePrecedes",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"161\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">1To1Precedes</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/oneToOnePrecedes-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Response",
+			"title":		"Response",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"171\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">Response</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/precedes-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"Start Scope",										
+					"readonly":false,					
+					"optional":true				
+				},
+				{
+					"id":"endScope",
+					"type":"Sate",
+					"title":"End Scope",										
+					"readonly":false,
+					"optional":true
+				},
+				{
+					"id":"timeSpan",
+					"type":"Integer",
+					"title":"Time Span(Day)",
+					"value":"",					
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true				
+				},
+				{
+					"id":"isBefore",
+					"type":"Boolean",
+					"title":"Is Before?",
+					"value":"",					
+					"readonly":false,
+					"optional":true,
+					"length":"",
+					"wrapLines" : true				
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"OneToOneResponse",
+			"title":		"oneToOneResponse",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"161\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">1To1Response</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/oneToOnePrecedes-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Until",
+			"title":		"Until",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"191\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">Until</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/next-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"weakUntil",
+			"title":		"WeakUntil",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"171\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">Weak Until</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/next-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Next",
+			"title":		"Next",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"191\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">Next</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/next-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"startScope",
+					"type":"String",
+					"title":"startScope",										
+					"readonly":false,					
+					"optional":true,
+					"dateFormat":"j/m/y"					
+				},
+				{
+					"id":"endScope",
+					"type":"String",
+					"title":"EndScope",										
+					"readonly":false,
+					"optional":true,
+					"dateFormat":"j/m/y"
+				}				
+			]
+		},
+		{
+			"type":			"node",
+			"id":			"Relevant",
+			"title":		"Relevant",	
+			"groups":		["Rules"],			
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">      <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->  <oryx:magnets>           <oryx:magnet oryx:cx=\"350\" oryx:cy=\"37.5\" oryx:default=\"yes\"/>   <oryx:magnet oryx:cx=\"0\" oryx:cy=\"37.5\"/>  </oryx:magnets>  <g pointer-events=\"fill\" oryx:minimumSize=\"80 60\">   <g>       <rect id=\"svg_1\" height=\"75\" width=\"150\" y=\"0\" x=\"0\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>    <rect id=\"svg_3\" height=\"75\" width=\"150\" y=\"0\" x=\"250\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"#fff\"/>     <line stroke-linecap=\"null\" stroke-linejoin=\"null\" id=\"svg_8\" y2=\"37.5\" x2=\"250\" y1=\"37.5\" x1=\"149.99942\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"1.5\" stroke=\"#000\" fill=\"none\"/>     <text transform=\"matrix(1 0 0 0.622638 0 30.7803)\" stroke=\"#000\" xml:space=\"preserve\" text-anchor=\"left\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"12\" id=\"svg_9\" y=\"35\" x=\"171\" fill-opacity=\"null\" stroke-opacity=\"null\" stroke-width=\"0\" fill=\"#000000\">Relevant</text>    <text id=\"leftNodeName\" x=\"65\" y=\"35\" oryx:align=\"middle center\"></text>      <text id=\"rightNodeName\" x=\"315\" y=\"35\" oryx:align=\"middle center\"></text>     </g>   <a id=\"complexL\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" x=\"68\" y=\"60\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"black\" stroke-width=\"1\" />     <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\"   d=\"m75,61l0,10m-5,-5l10,0\"  stroke-width=\"1\"/>    </g>   </a>   <a id=\"complexR\" target=\"_blank\">    <g id=\"b\"     oryx:anchors=\"bottom\">     <rect oryx:anchors=\"bottom\" id=\"svg_2\" stroke=\"black\" fill=\"none\" height=\"14\" width=\"14\" y=\"60\" x=\"318\"/>     <path oryx:anchors=\"bottom\" id=\"svg_3\" d=\"m325,61l0,10m-5,-5l10,0\" stroke=\"black\" fill=\"none\"/>    </g>   </a>    </g>  </svg> ",
+			"icon":			"nodes/relevant-icon.png",
+			"roles":		["interaction"],						
+			"propertyPackages" : ["dualBaseAttributes","properties"],
+			"properties": [				
+				{
+					"id":"LHSType",
+					"type":"Choice",
+					"title":"LHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexL"
+						}
+					]
+				},
+				{
+					"id":"RHSType",
+					"type":"Choice",
+					"title":"RHS Type",
+					"title_de":"Start-Ereignis",
+					"value":"Simple",
+					"description":"",
+					"readonly":false,
+					"optional":false,
+					"items":[
+						{
+							"id":"c1",
+							"title":"Simple",							
+							"value":"Simple",
+							"icon" : "list/simple.png",
+							"refToView":""
+						},
+						{
+							"id":"c2",
+							"title":"Complex",							
+							"value":"Complex",
+							"icon" : "list/complex.png",
+							"refToView":"complexR"
+						}
+					]
+				},				
+				{
+					"id":"subProcessLinkL",
+					"type":"DiagramLink",
+					"title":"LHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexL"				
+				},				
+				{
+					"id":"subProcessLinkR",
+					"type":"DiagramLink",
+					"title":"RHS SubProcessLink",
+					"title_de":"Subprozess-Referenz",
+					"value":"",
+					"description":"",
+					"readonly":false,
+					"optional":true,
+					"refToView":"complexR"				
+				},
+				{
+					"id":"period",
+					"type":"Integer",
+					"title":"Period(Hours)",										
+					"readonly":false,
+					"optional":true
+				}				
+			]
+		},
+		{
+			"type":			"edge",
+			"id":			"PrecedesEdge",
+			"title":		"Precedes",	
+			"groups":		["Relationship"],
+			"description":	"A precedes edges",
+			"view":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    version=\"1.1\">    <defs>    <marker id=\"arrowEnd\" refX=\"10\" refY=\"5\" markerUnits=\"userSpaceOnUse\"     markerWidth=\"10\" markerHeight=\"10\" orient=\"auto\">     <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"black\" stroke=\"black\"/>    </marker>   </defs>     <g>     <path d=\"M50 50 L100 50\" stroke=\"black\" fill=\"none\"    stroke-width=\"2\" marker-end=\"url(#arrowEnd)\"/>        </g> </svg> ",
+			"icon":			"edge.precedes.png",
+			"roles":		["controlflow"]
+		}		
+	],
+	"rules":{
+		"connectionRules": [
+			{
+				"role": 	"controlflow",
+				"connects": [
+					{
+						"from": "interaction",
+						"to":	"interaction"
+					}
+				],
+			}
+		],
+		"containmentRules":	[
+			{
+				"role":		"Diagram",
+				"contains": [
+							"interaction"
+				]
+			},
+			{
+				"role":		"complexInteraction",
+				"contains": [
+							"interaction"
+				]
+			}
+		]
+		
+	}
+}

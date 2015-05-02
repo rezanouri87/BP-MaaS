@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="580" height="400" xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+
+	<oryx:magnets>
+		<oryx:magnet oryx:cx="0" oryx:cy="60" />
+		<oryx:magnet oryx:cx="200" oryx:cy="60" oryx:default="yes"/>
+		<oryx:magnet oryx:cx="100" oryx:cy="0"/>
+		<oryx:magnet oryx:cx="100" oryx:cy="120"/>
+	</oryx:magnets>
+	<g>		
+		<rect id="svg_1" height="120" width="200" y="0" x="0" stroke-width="1.5" stroke="#000" fill="#fff"/>
+		<line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="90" x2="200" y1="90" x1="0" stroke-width="1.5" stroke="#000" fill="none"/>
+		<text transform="matrix(0.795918 0 0 0.574897 21.6327 52.4112)" stroke="#000" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_4" y="110" x="55" fill-opacity="null" stroke-opacity="null" stroke-dasharray="5,5" stroke-width="0" fill="#000000">ExactlyTimes</text>
+		<text id="singleNodeName" x="90" y="40" oryx:align="middle center"/>
+		<a id="complexC" target="_blank">
+			<g id="b"  oryx:anchors="bottom">
+				<rect oryx:anchors="bottom" x="93" y="70" width="14" height="14" fill="none" stroke="black" id="svg_5"/>
+				<path oryx:anchors="bottom" fill="none" stroke="black" d="m100,71l0,10m-5,-5l10,0" id="svg_6"/>
+			</g>
+		</a>
+	</g>
+</svg>

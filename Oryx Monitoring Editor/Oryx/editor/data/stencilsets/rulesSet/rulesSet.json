@@ -1,0 +1,18 @@
+{
+        "title":"RULES",
+        "namespace":"http://b3mn.org/stencilset/rulesSet#",
+        "description":"Simple stencil set for Let's Dance diagrams.",
+         "stencils": [
+                {
+                        "type":         "node",
+                        "id":           "rulesSet",
+                        "title":        "rulesSet",      
+                        "groups":       ["Diagram"],
+                        "description":  "RulesSet Diagram",
+                        "view":         "node.and.svg",
+                        "icon":         "diagram.png",
+                        "roles":                []
+                   }
+        ],
+         "rules":{*/..*/}
+}

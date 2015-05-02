@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="580" height="400" xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+
+	<oryx:magnets>
+		<oryx:magnet oryx:cx="0" oryx:cy="60" oryx:default="yes"/>
+		<oryx:magnet oryx:cx="240" oryx:cy="60"/>
+		<oryx:magnet oryx:cx="120" oryx:cy="0"/>
+		<oryx:magnet oryx:cx="120" oryx:cy="120"/>
+	</oryx:magnets>
+	<g>
+		<rect stroke-dasharray="5,5" id="svg_1" height="120" width="240" y="0" x="0" stroke-width="1.5" stroke="#000" fill="#fff"/>
+		<line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="90" x2="240" y1="90" x1="0" stroke-width="1.5" stroke="#000" fill="none"/>
+		<line stroke-linecap="null" stroke-linejoin="null" id="svg_3" y2="90" x2="120" y1="0" x1="120" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+		<text transform="matrix(0.795918 0 0 0.574897 21.6327 52.4112)" stroke="#000" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="18" id="svg_4" y="110" x="110" fill-opacity="null" stroke-opacity="null" stroke-dasharray="5,5" stroke-width="0" fill="#000000">NOT</text>
+		<text id="leftNodeName" x="60" y="40" oryx:align="middle center"></text>		
+		<text id="rightNodeName" x="180" y="40" oryx:align="middle center"></text>	
+		<a id="complexL" target="_blank">
+			<g id="b"  oryx:anchors="bottom">
+				<rect oryx:anchors="bottom" id="svg_5" stroke="black" fill="none" height="14" width="14" y="70" x="55"/>
+				<path oryx:anchors="bottom" id="svg_6" d="m62,71l0,10m-5,-5l10,0" stroke="black" fill="none"/>
+			</g>
+		</a>
+		<a id="complexR" target="_blank">
+			<g id="b"     oryx:anchors="bottom">
+				<rect oryx:anchors="bottom" id="svg_7" stroke="black" fill="none" height="14" width="14" y="70" x="175"/>
+				<path oryx:anchors="bottom" id="svg_8" d="m182,71l0,10m-5,-5l10,0" stroke="black" fill="none"/>
+			</g>
+		</a>			
+	</g>
+</svg>

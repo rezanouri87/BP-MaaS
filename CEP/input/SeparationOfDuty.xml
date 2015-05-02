@@ -1,0 +1,10 @@
+<monitoringRules>
+	<rule type="SeparationOfDuty"  startScope="TaskComplete(C)" endScope="TaskComplete(D)">
+		<LHS>
+			<operand name="A"/>
+		</LHS>
+		<RHS>
+			<operand name="B"/>
+		</RHS>
+	</rule>		
+</monitoringRules>

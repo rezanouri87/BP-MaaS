@@ -1,0 +1,7 @@
+<monitoringRules>
+	<rule type="PerformedByRole"  Resource="Engineer" startScope="TaskComplete(C)" endScope="TaskComplete(D)">
+		<LHS>
+			<operand name="A"/>
+		</LHS>
+	</rule>		
+</monitoringRules>

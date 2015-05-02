@@ -1,0 +1,62 @@
+D:\MyWorkspace\NEsper-CEP-Example-master\Common\bin\Debug\Common.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\Common\bin\Debug\Common.pdb
+D:\MyWorkspace\NEsper-CEP-Example-master\Common\bin\Debug\log4net.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\MyWorkspace\NEsper-CEP-Example-master\Common\obj\Debug\Common.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\Common\obj\Debug\Common.pdb
+D:\MyWorkspace\github\esper\ECP Platform\Common\bin\Debug\Common.dll
+D:\MyWorkspace\github\esper\ECP Platform\Common\bin\Debug\Common.pdb
+D:\MyWorkspace\github\esper\ECP Platform\Common\bin\Debug\log4net.dll
+D:\MyWorkspace\github\esper\ECP Platform\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\MyWorkspace\github\esper\ECP Platform\Common\obj\Debug\Common.dll
+D:\MyWorkspace\github\esper\ECP Platform\Common\obj\Debug\Common.pdb
+D:\Beshoy\ECP Platform\Common\bin\Debug\Common.dll
+D:\Beshoy\ECP Platform\Common\bin\Debug\Common.pdb
+D:\Beshoy\ECP Platform\Common\bin\Debug\log4net.dll
+D:\Beshoy\ECP Platform\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Beshoy\ECP Platform\Common\obj\Debug\Common.dll
+D:\Beshoy\ECP Platform\Common\obj\Debug\Common.pdb
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\Common\bin\Debug\Common.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\Common\bin\Debug\Common.pdb
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\Common\bin\Debug\log4net.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\Common\obj\Debug\Common.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\Common\obj\Debug\Common.pdb
+D:\MyWorkspace\github\esper\CEP Platform\Common\bin\Debug\Common.dll
+D:\MyWorkspace\github\esper\CEP Platform\Common\bin\Debug\Common.pdb
+D:\MyWorkspace\github\esper\CEP Platform\Common\bin\Debug\log4net.dll
+D:\MyWorkspace\github\esper\CEP Platform\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\MyWorkspace\github\esper\CEP Platform\Common\obj\Debug\Common.dll
+D:\MyWorkspace\github\esper\CEP Platform\Common\obj\Debug\Common.pdb
+C:\Users\Beshoy\Desktop\CEP Platform\Common\bin\Debug\Common.dll
+C:\Users\Beshoy\Desktop\CEP Platform\Common\bin\Debug\Common.pdb
+C:\Users\Beshoy\Desktop\CEP Platform\Common\bin\Debug\log4net.dll
+C:\Users\Beshoy\Desktop\CEP Platform\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Beshoy\Desktop\CEP Platform\Common\obj\Debug\Common.dll
+C:\Users\Beshoy\Desktop\CEP Platform\Common\obj\Debug\Common.pdb
+D:\Work\OSwork\Activiti\BD\CEP Platform\Common\bin\Debug\Common.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\Common\bin\Debug\Common.pdb
+D:\Work\OSwork\Activiti\BD\CEP Platform\Common\bin\Debug\log4net.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Work\OSwork\Activiti\BD\CEP Platform\Common\obj\Debug\Common.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\Common\obj\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\Common\bin\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\Common\bin\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\Common\obj\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\Common\obj\Debug\Common.pdb
+D:\Work\OSwork\Activiti\CEP comments\Common\bin\Debug\Common.dll
+D:\Work\OSwork\Activiti\CEP comments\Common\bin\Debug\Common.pdb
+D:\Work\OSwork\Activiti\CEP comments\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Work\OSwork\Activiti\CEP comments\Common\obj\Debug\Common.dll
+D:\Work\OSwork\Activiti\CEP comments\Common\obj\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments\Common\bin\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\Common\bin\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Work\KSA\Mostafa End to End\CEP comments\Common\obj\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\Common\obj\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\Common\bin\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\Common\bin\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\Common\obj\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\Common\obj\Debug\Common.pdb

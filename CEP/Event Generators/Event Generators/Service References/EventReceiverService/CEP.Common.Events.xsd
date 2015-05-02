@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CEP.Common.Events" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CEP.Common.Events" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="RawEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RawEvent" nillable="true" type="tns:RawEvent" />
+  <xs:complexType name="TaskStop">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TaskEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskStop" nillable="true" type="tns:TaskStop" />
+  <xs:complexType name="TaskEvent">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RawEvent">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProcessID" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Task" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="TaskActor" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="TaskID" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskEvent" nillable="true" type="tns:TaskEvent" />
+  <xs:complexType name="ProcessStart">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessStart" nillable="true" type="tns:ProcessStart" />
+  <xs:complexType name="ProcessEvent">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RawEvent">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProcessID" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessEvent" nillable="true" type="tns:ProcessEvent" />
+  <xs:complexType name="TaskResume">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TaskEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskResume" nillable="true" type="tns:TaskResume" />
+  <xs:complexType name="TaskComplete">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TaskEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskComplete" nillable="true" type="tns:TaskComplete" />
+  <xs:complexType name="TaskResourceAllocation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TaskEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskResourceAllocation" nillable="true" type="tns:TaskResourceAllocation" />
+  <xs:complexType name="ProcessSuspend">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessSuspend" nillable="true" type="tns:ProcessSuspend" />
+  <xs:complexType name="ProcessResume">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessResume" nillable="true" type="tns:ProcessResume" />
+  <xs:complexType name="ProcessStop">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessStop" nillable="true" type="tns:ProcessStop" />
+  <xs:complexType name="ProcessComplete">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessComplete" nillable="true" type="tns:ProcessComplete" />
+  <xs:complexType name="TaskStart">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TaskEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskStart" nillable="true" type="tns:TaskStart" />
+  <xs:complexType name="TaskSuspend">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TaskEvent">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskSuspend" nillable="true" type="tns:TaskSuspend" />
+</xs:schema>

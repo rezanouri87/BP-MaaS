@@ -1,0 +1,7 @@
+<monitoringRules>
+	<rule type="Absence"  startScope="TaskComplete(C)" endScope="TaskComplete(D)" minOccurs="0" maxOccurs="0">
+		<LHS>
+			<operand name="F"/>
+		</LHS>
+	</rule>		
+</monitoringRules>

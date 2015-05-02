@@ -1,0 +1,224 @@
+PostgreSQL 9.1.11 running on localhost:5432 -- You are logged in as user "poem"	
+SQL History Find Logout
+Database RootphpPgAdmin:	ServerPostgreSQL?:	Databasepoem?:
+Query Results
+
+SET
+SET
+SET
+SET
+SET
+db_schema.sql:15: ERROR: language "plpgsql" already exists
+ALTER LANGUAGE
+db_schema.sql:24: ERROR: could not access file "$libdir/plpython2": No such file or directory
+db_schema.sql:27: ERROR: language "plpythonu" does not exist
+SET
+CREATE FUNCTION
+ALTER FUNCTION
+db_schema.sql:80: ERROR: language "plpythonu" does not exist
+HINT: Use CREATE LANGUAGE to load the language into the database.
+db_schema.sql:83: ERROR: function public.parent(text) does not exist
+SET
+SET
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+db_schema.sql:145: ERROR: function parent(text) does not exist
+LINE 7: ..._restrict_to_parent AND access.object_descend AND parent(obj...
+^
+HINT: No function matches the given name and argument types. You might need to add explicit type casts.
+db_schema.sql:148: ERROR: relation "public.access" does not exist
+CREATE SEQUENCE
+ALTER TABLE
+setval
+1
+
+1 row(s)
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE SEQUENCE
+ALTER TABLE
+setval
+3
+
+1 row(s)
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+CREATE SEQUENCE
+ALTER TABLE
+setval
+1
+
+1 row(s)
+CREATE TABLE
+ALTER TABLE
+CREATE SEQUENCE
+ALTER TABLE
+setval
+1
+
+1 row(s)
+CREATE TABLE
+ALTER TABLE
+db_schema.sql:467: ERROR: language "plpythonu" does not exist
+HINT: Use CREATE LANGUAGE to load the language into the database.
+db_schema.sql:470: ERROR: function public.child_position(text) does not exist
+db_schema.sql:503: ERROR: language "plpythonu" does not exist
+HINT: Use CREATE LANGUAGE to load the language into the database.
+db_schema.sql:506: ERROR: function public.decode_position(text) does not exist
+db_schema.sql:541: ERROR: language "plpythonu" does not exist
+HINT: Use CREATE LANGUAGE to load the language into the database.
+db_schema.sql:544: ERROR: function public.encode_position(integer) does not exist
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+CREATE FUNCTION
+ALTER FUNCTION
+db_schema.sql:806: ERROR: language "plpythonu" does not exist
+HINT: Use CREATE LANGUAGE to load the language into the database.
+db_schema.sql:809: ERROR: function public.poem_path(text) does not exist
+db_schema.sql:840: ERROR: language "plpythonu" does not exist
+HINT: Use CREATE LANGUAGE to load the language into the database.
+db_schema.sql:843: ERROR: function public.work_around_path(text) does not exist
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+setval
+1
+
+1 row(s)
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+setval
+1
+
+1 row(s)
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+setval
+5
+
+1 row(s)
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+setval
+1
+
+1 row(s)
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+setval
+1
+
+1 row(s)
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+setval
+1
+
+1 row(s)
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE INDEX
+CREATE INDEX
+db_schema.sql:1310: ERROR: function parent(text) does not exist
+LINE 1: ...ATE INDEX poem_position ON structure USING btree (parent(hie...
+^
+HINT: No function matches the given name and argument types. You might need to add explicit type casts.
+CREATE INDEX
+CREATE INDEX
+CREATE TRIGGER
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+REVOKE
+REVOKE
+GRANT
+GRANT
+Total runtime: 306.616 ms
+
+SQL executed.
+
+Edit SQL
+back to top

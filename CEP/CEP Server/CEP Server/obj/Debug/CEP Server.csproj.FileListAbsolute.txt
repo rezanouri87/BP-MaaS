@@ -1,0 +1,179 @@
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\Antlr3.Runtime.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\CGLib.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\log4net.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\NEsper.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\NEsper.IO.dll
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\MyWorkspace\NEsper-CEP-Example-master\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Antlr3.Runtime.dll
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CGLib.dll
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\log4net.dll
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\NEsper.dll
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\NEsper.IO.dll
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\MyWorkspace\github\esper\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\Antlr3.Runtime.dll
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\CGLib.dll
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\log4net.dll
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\NEsper.dll
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\NEsper.IO.dll
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Beshoy\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Antlr3.Runtime.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\CGLib.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Common.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\log4net.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\NEsper.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\NEsper.IO.dll
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\bin\Debug\Common.pdb
+C:\Users\beshoy.malak\Documents\GitHub\esper\ECP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\Antlr3.Runtime.dll
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\CGLib.dll
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\log4net.dll
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\NEsper.dll
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\NEsper.IO.dll
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\MyWorkspace\github\esper\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\CGLib.dll
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\Common.dll
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\log4net.dll
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\NEsper.dll
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\NEsper.IO.dll
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\bin\Debug\Common.pdb
+C:\Users\Beshoy\Desktop\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\Antlr3.Runtime.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\CGLib.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\log4net.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\NEsper.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\NEsper.IO.dll
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\Work\OSwork\Activiti\BD\CEP Platform\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\Delivery of CEP\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Work\OSwork\Activiti\CEP comments\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Antlr4.Runtime.net45.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Common.Logging.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\NEsper.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Nito.KitchenSink.CRC.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Sharpen.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\XLR8.CGLib.dll
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Antlr4.Runtime.net45.xml
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Castle.Core.xml
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Common.Logging.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Common.Logging.xml
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\NEsper.xml
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Nito.KitchenSink.CRC.xml
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\Sharpen.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments\CEP Server\CEP Server\bin\Debug\XLR8.CGLib.xml
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Antlr4.Runtime.net45.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Castle.Core.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.Logging.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\NEsper.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Nito.KitchenSink.CRC.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Sharpen.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\XLR8.CGLib.dll
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Antlr4.Runtime.net45.xml
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Castle.Core.xml
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.Logging.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.Logging.xml
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\NEsper.xml
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Nito.KitchenSink.CRC.xml
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Sharpen.pdb
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\XLR8.CGLib.xml
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Work\KSA\Mostafa End to End\CEP comments AA Reviewed\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\obj\Debug\CEP Server.pdb
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\CEP Server.exe
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\CEP Server.pdb
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.dll
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.pdb
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Antlr4.Runtime.net45.xml
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Castle.Core.xml
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.Logging.pdb
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Common.Logging.xml
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\NEsper.xml
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Nito.KitchenSink.CRC.xml
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\Sharpen.pdb
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\bin\Debug\XLR8.CGLib.xml
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\obj\Debug\CEP Server.csprojResolveAssemblyReference.cache
+D:\Work\OSwork\Activiti\CEP comments\Ahmed's version\CEP comments AA Reviewed\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Work\OSwork\Activiti\Delivery of CEP\CEP\CEP Server\CEP Server\bin\Debug\CEP Server.exe.config
+D:\Work\OSwork\Activiti\Delivery of CEP\CEP\CEP Server\CEP Server\obj\Debug\CEP Server.exe
+D:\Work\OSwork\Activiti\Delivery of CEP\CEP\CEP Server\CEP Server\obj\Debug\CEP Server.pdb

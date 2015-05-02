@@ -1,0 +1,7 @@
+<monitoringRules>
+	<rule type="Exists"  startScope="TaskComplete(C)" endScope="TaskComplete(D)" minOccurs="1" maxOccurs="2">
+		<LHS>
+			<operand name="A"/>
+		</LHS>
+	</rule>		
+</monitoringRules>

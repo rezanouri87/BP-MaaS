@@ -1,0 +1,10 @@
+<monitoringRules>
+	<rule type="Response"  isOneToOne="true" isBefore="false" startScope="TaskComplete(C)" endScope="TaskComplete(D)" timeSpan="2 sec" alertTimeSpan="" withAbsence="'M','V'">
+		<LHS>
+			<operand name="A"/>
+		</LHS>
+		<RHS>
+			<operand name="B"/>
+		</RHS>
+	</rule>		
+</monitoringRules>
